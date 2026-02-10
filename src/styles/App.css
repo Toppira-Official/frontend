@@ -1,0 +1,17 @@
+@import url('./font.css');
+@import 'tailwindcss';
+
+@theme {
+  --font-dana: 'Dana', serif;
+  --font-operator-mono: 'Operator Mono', serif;
+}
+
+@layer base {
+  body {
+    @apply font-dana;
+  }
+
+  .container {
+    @apply mx-auto px-4;
+  }
+}
