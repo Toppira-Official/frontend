@@ -1,0 +1,5 @@
+{
+  "language": "en, fa, fa-IR",
+  "words": ["fullstacksjs", "Toppira"],
+  "import": ["@cspell/dict-fa-ir/cspell-ext.json"]
+}
