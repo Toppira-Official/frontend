@@ -1,9 +1,19 @@
+import { Button } from 'antd';
+import React from 'react';
+import { IoMenu } from 'react-icons/io5';
 import { Link } from 'react-router';
 
 import { HeaderItems } from '../data/header_items.ts';
+import { HeaderDrawer } from './header_drawer.tsx';
 import { HeaderItem } from './header_item.tsx';
 
 export const Header = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+
+  const onDrawerClose = (
+    _: KeyboardEvent | React.KeyboardEvent | React.MouseEvent,
+  ) => setIsDrawerOpen(false);
+
   return (
     <header className="flex h-18 items-center">
       <div className="container flex items-center justify-between">
@@ -12,15 +22,25 @@ export const Header = () => {
             <Link to="/">تاپیرا</Link>
           </h1>
 
-          {HeaderItems.map((item) => (
-            <HeaderItem key={`header-item-${item.title}`} {...item} />
-          ))}
+          <ul className="hidden items-center gap-10 lg:flex">
+            {HeaderItems.map((item) => (
+              <HeaderItem key={`header-item-${item.title}`} {...item} />
+            ))}
+          </ul>
         </div>
 
         <div>
+          <Button
+            onClick={() => setIsDrawerOpen(true)}
+            className="lg:hidden!"
+            type="text"
+          >
+            <IoMenu size="28" />
+          </Button>
+          <HeaderDrawer onClose={onDrawerClose} open={isDrawerOpen} />
           <Link
             to="/login"
-            className="rounded-2xl border border-blue-600 bg-blue-600 px-12 py-2 text-white transition-all duration-100 hover:bg-transparent hover:text-blue-600"
+            className="hidden rounded-2xl border border-blue-600 bg-blue-600 px-12 py-2 text-white transition-all duration-100 hover:bg-transparent hover:text-blue-600 lg:inline"
           >
             ورود
           </Link>
