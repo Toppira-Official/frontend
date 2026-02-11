@@ -6,62 +6,36 @@ export const HeaderItems: HeaderItem[] = [
     link: '/',
   },
   {
-    title: 'معرفی',
-    items: [
-      {
-        title: 'درباره تاپیرا',
-        link: '/about/toppira',
-      },
-      {
-        title: 'درباره ما',
-        link: '/about/us',
-      },
-      {
-        title: 'ماموریت و چشم‌انداز',
-        link: '/about/vision',
-      },
-      {
-        title: 'تیم ما',
-        link: '/about/team',
-      },
-    ],
+    title: 'امکانات',
+    link: '/features',
   },
   {
-    title: 'خدمات',
-    items: [
-      {
-        title: 'محصولات',
-        link: '/services/products',
-      },
-      {
-        title: 'راهکارها',
-        link: '/services/solutions',
-      },
-      {
-        title: 'تعرفه‌ها',
-        link: '/services/pricing',
-      },
-    ],
+    title: 'قیمت‌گذاری',
+    link: '/pricing',
   },
   {
     title: 'منابع',
     items: [
       {
-        title: 'بلاگ',
+        title: 'وبلاگ',
         link: '/blog',
       },
       {
-        title: 'سوالات متداول',
-        link: '/faq',
+        title: 'مرکز راهنما',
+        link: '/help-center',
       },
       {
-        title: 'راهنما',
-        link: '/guide',
+        title: 'سؤالات متداول',
+        link: '/faq',
       },
     ],
   },
   {
-    title: 'تماس با ما',
+    title: 'درباره ما',
+    link: '/about',
+  },
+  {
+    title: 'تماس',
     link: '/contact',
   },
 ];
