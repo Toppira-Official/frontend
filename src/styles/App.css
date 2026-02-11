@@ -50,6 +50,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section .ant-row {
+    justify-content: center;
+  }
+
+  .hero-section .ant-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-section .hero-content {
+    align-items: center;
+  }
+}
+
 .reminder-section {
   @apply bg-white py-20;
 }

@@ -18,7 +18,7 @@ export const RememberEffortlessly: React.FC = () => {
           justify="space-between"
         >
           <Col
-            xs={{ span: 24, order: 1 }}
+            xs={{ span: 24, order: 2 }}
             md={{ span: 12, order: 1 }}
             className="mb-4 md:mb-0"
           >
@@ -32,7 +32,7 @@ export const RememberEffortlessly: React.FC = () => {
           </Col>
 
           <Col
-            xs={{ span: 24, order: 2 }}
+            xs={{ span: 24, order: 1 }}
             md={{ span: 12, order: 2 }}
             className="text-center md:text-right"
           >
