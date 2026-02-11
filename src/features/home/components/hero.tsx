@@ -1,7 +1,7 @@
 import { Button, Col, Row, Typography } from 'antd';
 import React from 'react';
 
-import HeroImage from '../../assets/images/hero.webp';
+import HeroImage from '../../../assets/images/hero.webp';
 
 const { Title, Paragraph, Text } = Typography;
 
