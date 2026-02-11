@@ -1,23 +1,26 @@
 import './styles/App.css';
-import { Header } from './shared/components/header.tsx';
-import { Footer } from './shared/components/footer.tsx';
-import { Hero } from './features/home/components/hero.tsx';
-import { ReminderModes } from './features/home/components/reminder_modes.tsx';
-import { SimplifyLife } from './features/home/components/simplify_life.tsx';
-import { RememberEffortlessly } from './features/home/components/remember_effortlessly.tsx';
-import { Faq } from './features/home/components/faq.tsx';
+import { Route, Routes } from 'react-router';
+
+import { HomePage } from './features/home/pages/home.tsx';
+import { DashboardLayout } from './shared/layouts/dashboard_layout.tsx';
+import { PublicLayout } from './shared/layouts/public_layout.tsx';
+import { RequireAuth } from './shared/routes/RequireAuth.tsx';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <ReminderModes />
-      <SimplifyLife />
-      <RememberEffortlessly />
-      <Faq />
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<HomePage />} />
+      </Route>
+
+      <Route
+        element={
+          <RequireAuth>
+            <DashboardLayout />
+          </RequireAuth>
+        }
+      />
+    </Routes>
   );
 }
 
