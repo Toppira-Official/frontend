@@ -24,20 +24,19 @@ export const Hero: React.FC = () => {
           >
             <div className="flex w-full flex-col items-center md:items-start">
               <Text className="hero-text mb-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-600">
-                یادآورهای هوشمند برای هر کاری
+                فراموشی؟ دیگه نه
               </Text>
 
               <Title
                 level={1}
                 className="hero-text mt-2! text-3xl! leading-snug! font-black! sm:text-4xl! md:text-5xl!"
               >
-                هرگز کاری را فراموش نکن.
+                برای هر کاری یه یادآور بساز.
               </Title>
 
               <Paragraph className="hero-text mt-4! text-sm! leading-8! text-gray-600 sm:text-base!">
-                برای کارهای مهمت یادآور بگذار، اعلان‌های تکرارشونده تنظیم کن و
-                مطمئن باش هیچ قرار روزانه، هفتگی یا ماهانه‌ای از قلم نمی‌افتد.
-                تاپیرا کمک می‌کند همیشه یک قدم جلوتر باشی.
+                تکرارش کن، شخصی‌سازیش کن و بذار تاپیرا حواسش به همه‌چیز باشه. تو
+                فقط کارهاتو بنویس، ما حواسمون به زمانش هست.
               </Paragraph>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center md:justify-start">
