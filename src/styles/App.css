@@ -224,6 +224,19 @@
   max-width: 520px;
 }
 
+.auth-section {
+  @apply bg-white py-20;
+}
+
+.auth-card {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 24px 24px 32px;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

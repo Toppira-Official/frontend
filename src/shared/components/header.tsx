@@ -38,12 +38,20 @@ export const Header = () => {
             <IoMenu size="28" />
           </Button>
           <HeaderDrawer onClose={onDrawerClose} open={isDrawerOpen} />
-          <Link
-            to="/login"
-            className="hidden rounded-2xl border border-blue-600 bg-blue-600 px-12 py-2 text-white transition-all duration-100 hover:bg-transparent hover:text-blue-600 lg:inline"
-          >
-            ورود
-          </Link>
+          <div className="hidden items-center gap-4 lg:flex">
+            <Link
+              to="/signup"
+              className="rounded-2xl border border-blue-600 px-6 py-2 text-blue-600 transition-all duration-100 hover:bg-blue-50"
+            >
+              ثبت‌نام
+            </Link>
+            <Link
+              to="/login"
+              className="rounded-2xl border border-blue-600 bg-blue-600 px-8 py-2 text-white transition-all duration-100 hover:bg-transparent hover:text-blue-600"
+            >
+              ورود
+            </Link>
+          </div>
         </div>
       </div>
     </header>
