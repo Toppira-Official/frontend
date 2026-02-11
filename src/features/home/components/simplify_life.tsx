@@ -1,4 +1,4 @@
-import { Button, Col, Row, Typography } from 'antd';
+import { Col, Row, Typography } from 'antd';
 import React from 'react';
 
 import SimplifyImage from '../../../assets/images/simplify_life.webp';
