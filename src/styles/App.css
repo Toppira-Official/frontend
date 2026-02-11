@@ -229,7 +229,7 @@
   width: 40px;
   height: 40px;
   border-radius: 9999px;
-  background-color: #ffffff;
+  background-color: #111827;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
   display: flex !important;
   align-items: center;
@@ -238,6 +238,6 @@
 
 .testimonials-carousel .slick-prev:before,
 .testimonials-carousel .slick-next:before {
-  color: #6b7280;
+  color: #ffffff;
   font-size: 20px;
 }

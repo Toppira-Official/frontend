@@ -42,7 +42,13 @@ export const Testimonials: React.FC = () => {
   return (
     <section dir="rtl" className="testimonials-section">
       <div className="container">
-        <Carousel className="testimonials-carousel" dots arrows draggable>
+        <Carousel
+          className="testimonials-carousel"
+          dots
+          arrows
+          draggable
+          infinite
+        >
           {slides.map((group, index) => (
             <div key={index}>
               <div className="testimonials-slide">
