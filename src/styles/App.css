@@ -194,6 +194,36 @@
   color: #9ca3af;
 }
 
+.not-found-section {
+  @apply bg-white py-20;
+}
+
+.not-found-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.not-found-image-wrapper {
+  margin-bottom: 24px;
+}
+
+.not-found-image {
+  max-width: 320px;
+  width: 100%;
+}
+
+.not-found-title {
+  margin-top: 8px;
+}
+
+.not-found-text {
+  max-width: 520px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

@@ -1,6 +1,7 @@
 import './styles/App.css';
 import { Route, Routes } from 'react-router';
 
+import { NotFoundPage } from './features/common/pages/not_found.tsx';
 import { HomePage } from './features/home/pages/home.tsx';
 import { DashboardLayout } from './shared/layouts/dashboard_layout.tsx';
 import { PublicLayout } from './shared/layouts/public_layout.tsx';
@@ -11,6 +12,7 @@ function App() {
     <Routes>
       <Route element={<PublicLayout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
 
       <Route
