@@ -32,7 +32,7 @@ export const Header = () => {
         <div className="flex items-center gap-3">
           <Link
             to="/login"
-            className="rounded-xl bg-blue-600! px-4 py-1 text-sm font-medium text-white!"
+            className="rounded-xl bg-blue-600! px-4 py-1 text-sm font-medium text-white! lg:hidden"
           >
             ورود
           </Link>
