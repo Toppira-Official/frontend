@@ -15,3 +15,15 @@
     @apply mx-auto px-4;
   }
 }
+
+@layer components {
+  .hero-text {
+    text-align: center !important;
+  }
+
+  @media (min-width: 768px) {
+    .hero-text {
+      text-align: right !important;
+    }
+  }
+}

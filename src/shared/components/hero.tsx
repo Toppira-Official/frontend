@@ -13,28 +13,21 @@ export const Hero: React.FC = () => {
           <Col
             xs={{ span: 24, order: 1 }}
             md={{ span: 12, order: 1 }}
-            className="text-right"
+            className="text-center md:text-right"
           >
-            <div className="flex w-full flex-col">
-              <Text
-                className="mb-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-600"
-                style={{ textAlign: 'right', width: '100%' }}
-              >
+            <div className="flex w-full flex-col items-center md:items-end">
+              <Text className="hero-text mb-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-600">
                 یادآورهای هوشمند برای هر کاری
               </Text>
 
               <Title
                 level={1}
-                className="!mt-2 !text-3xl !leading-snug !font-black sm:!text-4xl md:!text-5xl"
-                style={{ textAlign: 'right', width: '100%' }}
+                className="hero-text !mt-2 !text-3xl !leading-snug !font-black sm:!text-4xl md:!text-5xl"
               >
                 هرگز کاری را فراموش نکن.
               </Title>
 
-              <Paragraph
-                className="!mt-4 !text-sm !leading-8 text-gray-600 sm:!text-base"
-                style={{ textAlign: 'right', width: '100%' }}
-              >
+              <Paragraph className="hero-text !mt-4 !text-sm !leading-8 text-gray-600 sm:!text-base">
                 برای کارهای مهمت یادآور بگذار، اعلان‌های تکرارشونده تنظیم کن و
                 مطمئن باش هیچ قرار روزانه، هفتگی یا ماهانه‌ای از قلم نمی‌افتد.
                 تاپیرا کمک می‌کند همیشه یک قدم جلوتر باشی.
