@@ -159,3 +159,37 @@
 .faq-collapse .ant-collapse-expand-icon {
   margin-inline-start: 12px;
 }
+
+.site-footer {
+  @apply bg-white pt-16;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-heading {
+  margin-bottom: 8px !important;
+  font-size: 0.95rem !important;
+}
+
+.footer-link {
+  display: block;
+  font-size: 0.9rem;
+  color: #6b7280 !important;
+}
+
+.footer-link:hover {
+  color: #111827 !important;
+}
+
+.footer-bottom {
+  margin-top: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
