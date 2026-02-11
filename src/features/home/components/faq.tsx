@@ -60,7 +60,7 @@ export const Faq: React.FC = () => {
             className="faq-collapse"
             bordered={false}
             expandIconPlacement="end"
-            activeKey={String(activeKey)}
+            activeKey={activeKey as unknown as number | string}
             onChange={(key) => setActiveKey(key)}
             expandIcon={({ isActive }) =>
               isActive ? (
