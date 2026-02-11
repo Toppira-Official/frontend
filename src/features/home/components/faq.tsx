@@ -1,7 +1,9 @@
-import { Collapse, Typography } from 'antd';
 import type { CollapseProps } from 'antd';
-import { CloseOutlined, PlusOutlined } from '@ant-design/icons';
+
+import { Collapse, Typography } from 'antd';
 import React from 'react';
+import { FaPlus } from 'react-icons/fa6';
+import { IoClose } from 'react-icons/io5';
 
 const { Title } = Typography;
 
@@ -57,14 +59,14 @@ export const Faq: React.FC = () => {
           <Collapse
             className="faq-collapse"
             bordered={false}
-            expandIconPosition="end"
-            activeKey={activeKey}
+            expandIconPlacement="end"
+            activeKey={String(activeKey)}
             onChange={(key) => setActiveKey(key)}
             expandIcon={({ isActive }) =>
               isActive ? (
-                <CloseOutlined style={{ fontSize: 14 }} />
+                <IoClose style={{ fontSize: 14 }} />
               ) : (
-                <PlusOutlined style={{ fontSize: 14 }} />
+                <FaPlus style={{ fontSize: 14 }} />
               )
             }
             items={items}
@@ -74,4 +76,3 @@ export const Faq: React.FC = () => {
     </section>
   );
 };
-
