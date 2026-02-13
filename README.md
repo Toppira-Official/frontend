@@ -1,12 +1,12 @@
-# Toppira — Frontend
+# Toppira — Reminder Client
 
-> Frontend application for **Toppira**, a reminder and todo management platform built with **React** and **TypeScript**. Designed for production-grade performance, maintainability, and future **AI** integration.
+> Frontend for **Reminder**, one of the applications in the [Toppira](https://github.com/Toppira-Official) ecosystem. Built with **React** and **TypeScript** for reminder and todo management. Designed for production-grade performance, maintainability, and future **AI** integration.
 
 ---
 
 ## 📋 Overview
 
-Toppira Frontend is a modern single-page application that powers the user interface for reminder and task management. It follows a **feature-based architecture**, leverages strong typing with **TypeScript**, and uses a cutting-edge tech stack. The codebase is structured for scalability and ready for advanced features such as AI-powered scheduling and smart notifications.
+**Reminder** is an application within the Toppira platform. This repository contains its frontend — a modern single-page application for reminder and task management. It follows a **feature-based architecture**, leverages strong typing with **TypeScript**, and uses a cutting-edge tech stack. The codebase is structured for scalability and ready for advanced features such as AI-powered scheduling and smart notifications.
 
 ---
 
@@ -132,6 +132,13 @@ Toppira Frontend is a modern single-page application that powers the user interf
 - API client layer and centralized error handling.
 - **AI** integration for smart scheduling and categorization.
 - Notification settings and reminder delivery UI.
+
+---
+
+## 🔗 Links
+
+- **Repository:** [github.com/Toppira-Official/Reminder_Client](https://github.com/Toppira-Official/Reminder_Client)
+- **Toppira:** [Toppira-Official](https://github.com/Toppira-Official)
 
 ---
 
